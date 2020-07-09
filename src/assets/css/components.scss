@@ -1,0 +1,439 @@
+// 分页
+.y-page {
+    width: calc(100% - 1.6rem);
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 0.4rem;
+    .y-page-btn {
+        padding: 0 0.4rem;
+        height: 0.35rem;
+        line-height: 0.35rem;
+        font-size: 0.18rem;
+        background: url(~@/assets/img/monitor/btn_samll.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        transition: all 0.3s linear;
+        &:hover {
+            background-color: #0ff;
+        }
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled):hover {
+        background-color: #0ff;
+        color: #fff;
+    }
+    .y-page-number {
+        margin: 0 0.2rem;
+        height: 0.35rem;
+        line-height: 0.35rem;
+        font-size: 0.18rem;
+        color: #fff;
+    }
+    .el-pagination.is-background .btn-next,
+    .el-pagination.is-background .btn-prev,
+    .el-pagination.is-background .el-pager li {
+        margin: 0 0.05rem;
+        background: url(~@/assets/img/monitor/btn_samll.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        min-width: 0.3rem;
+        border-radius: 0.02rem;
+        transition: all 0.3s linear;
+    }
+    .el-pager li {
+        padding: 0 0.15rem;
+        font-size: 0.18rem;
+        min-width: 3.55rem;
+        height: 0.35rem;
+        line-height: 0.35rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+        background: #00fffb;
+        color: #092438;
+    }
+}
+
+.y-date {
+    margin: 0.1rem 0;
+    .el-input__inner {
+        background-color: rgba(122, 141, 162, 0.5);
+        font-size: 0.14rem;
+        height: 0.4rem;
+        padding: 0 0.3rem;
+        color: #fff;
+    }
+    .el-input__icon {
+        width: 0.25rem;
+        line-height: 0.4rem;
+    }
+}
+
+// form
+.y-form .el-select,
+.y-form .el-input {
+    background: url(~@/assets/img/monitor/btn_large.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.y-form-btn-wrap .el-form-item__content {
+    margin-left: 0.2rem !important;
+}
+
+.y-form-btn {
+    display: inline-block;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    text-align: center;
+    background: url(~@/assets/img/monitor/btn_samll.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    color: #00ffea;
+    font-size: 0.18rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover {
+        background-color: #0ff;
+    }
+}
+
+.y-form {
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    // flex-direction: column;
+    height: 100%;
+    &>div {
+        // flex: 1;
+        margin-bottom: 0 !important;
+    }
+    .el-input--mini {
+        font-size: 0.18rem;
+    }
+    .el-input__inner {
+        background-color: none;
+        border: none;
+        opacity: 0;
+    }
+    .el-select {
+        >.el-input {
+            width: 1.7rem !important;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0.12rem;
+                height: 0.05rem;
+                right: 0.1rem;
+                top: 0.14rem;
+                background: url(~@/assets/img/monitor/sanjiao.png) center/contain no-repeat;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        >.is-focus.el-input {
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .el-input__inner {
+        background: transparent;
+    }
+    .el-input__inner {
+        opacity: 1 !important;
+        color: #fff;
+    }
+    .el-col-2 {
+        text-align: center;
+        color: #fff;
+    }
+    .el-input,
+    .el-input__inner {
+        width: 1.7rem !important;
+    }
+    .el-date-editor {
+        width: 2rem !important;
+    }
+    .el-form-item__label {
+        color: #fff;
+        font-size: 0.16rem;
+        line-height: 0.35rem;
+    }
+    .el-scrollbar {
+        background: url(~@/assets/img/monitor/btn_large.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        background-color: #334961;
+    }
+    .el-select-dropdown__item {
+        color: #fff;
+    }
+    .el-input--mini .el-input__icon {
+        width: 0.3rem;
+        line-height: 0.35rem;
+    }
+    .el-select-dropdown__item {
+        font-size: 0.16rem;
+        padding: 0 0.2rem;
+        color: #fff;
+        height: 0.35rem;
+        line-height: 0.35rem;
+    }
+    .el-input--mini .el-input__inner {
+        font-size: 0.16rem;
+        height: 0.35rem;
+        line-height: 0.35rem;
+    }
+    .el-input--suffix .el-input__inner {
+        padding-right: 0.1rem;
+    }
+    .el-select-dropdown {
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        margin: 0 !important;
+        left: 0 !important;
+        top: 0.35rem !important;
+        cursor: pointer;
+    }
+    .el-select-dropdown__item.hover,
+    .el-select-dropdown__item:hover {
+        background: #409eff54;
+    }
+    .popper__arrow {
+        display: none;
+    }
+    .el-input__suffix {
+        opacity: 0;
+    }
+    .el-input--prefix .el-input__inner {
+        padding-left: 0.4rem;
+    }
+    .el-form-item__content {
+        display: flex;
+        align-items: center;
+    }
+    .y-form-heng {
+        display: inline-block;
+        width: 0.2rem;
+        height: 0.03rem;
+        margin: 0 0.05rem;
+        text-align: center;
+        background: #a0bfd5;
+    }
+}
+
+.el-popper[x-placement^="bottom"].el-date-picker {
+    width: auto !important;
+}
+
+.Gateway-Control {
+    .el-select-dropdown__item {
+        font-size: 0.16rem;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        color: #ccc;
+        text-shadow: none;
+    }
+    .el-input__inner {
+        background-color: none;
+        border: none;
+        opacity: 0;
+    }
+    .el-input__suffix-inner {
+        display: none;
+    }
+    .el-popper[x-placement^="bottom"] .popper__arrow::after {
+        border-bottom-color: #093e5d;
+    }
+    .el-popper[x-placement^="bottom"] .popper__arrow {
+        display: none;
+    }
+    .el-select-dropdown {
+        border: 1px solid #638aa8;
+        background-color: #6f93af;
+    }
+    .el-select-dropdown__item.hover,
+    .el-select-dropdown__item:hover {
+        background-color: rgba(1, 30, 38, 0.3);
+    }
+    .el-popper[x-placement^="bottom"] {
+        margin-top: -0.02rem;
+        margin-left: -0.05rem;
+        width: 2.45rem;
+    }
+    .el-select>.el-input {
+        width: 2.45rem;
+    }
+    .el-select-dropdown__item.selected {
+        color: #ffffff;
+        font-weight: 700;
+    }
+}
+
+
+/*离线设备列表样式*/
+
+.alog_box {
+    margin-left: 0.1rem;
+    width: 4.6rem;
+    font-size: 0;
+}
+
+.ab_title {
+    margin-top: 0.16rem;
+    width: 100%;
+    height: 0.46rem;
+    background-color: rgba(76, 163, 165, 0.6);
+    span {
+        display: inline-block;
+        font-size: 0.14rem;
+        line-height: 0.46rem;
+        text-align: center;
+    }
+    span:nth-child(1) {
+        width: 2.2rem;
+    }
+    span:nth-child(2) {
+        width: 1.6rem;
+    }
+    span:nth-child(3) {
+        width: 0.8rem;
+    }
+}
+.alarm_alog_box .ab_title {
+    span{
+        width: .7rem;
+    }
+    span:nth-child(1) {
+        width: 1.5rem;
+    }
+    span:nth-child(2) {
+        width: 1.5rem;
+    }
+    span:nth-child(3) {
+        width: 0.8rem;
+    }
+}
+
+.alert_scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .as_nodata {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 100%;
+        height: 0.16rem;
+        font-size: 0.16rem;
+        color: #ccc;
+        text-align: center;
+    }
+    .scroll_ul {
+        position: absolute;
+        li {
+            cursor: pointer;
+        }
+        li span {
+            overflow: hidden;
+            display: inline-block;
+            padding-top: 0.12rem;
+            height: 0.4rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 0.14rem;
+            text-align: center;
+        }
+        li span:nth-child(1) {
+            width: 2.2rem;
+            //   padding-left: 0.2rem;
+            text-align: center;
+        }
+        li span:nth-child(2) {
+            width: 1.6rem;
+        }
+        li span:nth-child(3) {
+            width: 0.6rem;
+        }
+        li .a_type {
+            display: inline-block;
+            width: .2rem;
+            height: .2rem;
+            background: url("../img/icon/error_yellow.png") no-repeat center/contain;
+            vertical-align: middle;
+            //width: 0.5rem;
+            //height: 0.22rem;
+            //background-color: #ff8c00;
+            //border-radius: 0.11rem;
+            //color: #fff;
+            //font-size: 0.12rem;
+            //line-height: 0.22rem;
+            //text-shadow: none;
+        }
+    }
+}
+
+.alarm_alog_box .alert_scroll {
+
+    .scroll_ul {
+
+        li span:nth-child(1) {
+            width: 1.5rem;
+            //   padding-left: 0.2rem;
+            text-align: center;
+        }
+        li span:nth-child(2) {
+            width: 1.5rem;
+        }
+        li span:nth-child(3) {
+            width: 0.8rem;
+        }
+        li span:nth-child(4) {
+            width: .7rem;
+        }
+        li strong{
+            border-color:#67c23a;
+            background: #67c23a;
+            padding:2px;
+            border-radius: 2px;
+        }
+    }
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: rgba(0, 255, 249, 1) !important;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: rgba(24, 255, 0, 1);
+    background: rgba(24, 255, 0, 1);
+}
+
+.switch_p,
+.status_p {
+    display: inline-block;
+    height: 0.4rem;
+    overflow: hidden;
+    line-height: 0.4rem;
+    vertical-align: inherit !important;
+}
+
+.state,
+.onoff {
+    display: inline-block;
+    height: 0.4rem;
+    overflow: hidden;
+    line-height: 0.4rem;
+    margin-left: 0.2rem;
+    vertical-align: inherit !important;
+    img {
+        width: 0.2rem;
+        height: 0.2rem;
+        vertical-align: text-bottom;
+    }
+}

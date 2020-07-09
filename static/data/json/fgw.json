@@ -1,0 +1,153 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "edittype": "polyline",
+            "name": "线",
+            "config": {
+                "minPointNum": 2
+            },
+            "style": {
+				"animationDuration": 2000,
+				"animationImage": "img/textures/lineClr.png",
+                "color": "#f5eb31",
+                "width":100
+			},
+            "attr": {
+                "name": "线"
+            },
+            "type": "polyline"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [116.389105, 39.994955, 37.98],
+                [116.387914, 39.993964, 39.29],
+                [116.3873, 39.994812, 40.71]
+            ]
+        }
+    }, {
+        "type": "Feature",
+		"properties": {
+			"edittype": "polygon",
+			"name": "面",
+			"style": {
+				"color": "#f4fc00"
+			},
+			"attr": {},
+			"type": "polygon"
+		},
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [116.387823, 39.993287, 30],
+                    [116.386771, 39.993429, 30],
+                    [116.386977, 39.992266, 30],
+                    [116.38777, 39.992471, 30],
+                    [116.387823, 39.993287, 30]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "edittype": "label",
+            "name": "文字",
+            "style": {
+                "text":"我是测试文字"
+            },
+            "attr": {
+            },
+            "type": "label"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [116.386188, 39.994716, 40.85]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "edittype": "imagepoint",
+            "name": "图标点标记",
+            "style": {
+                "image": "../static/marsData/image/mark1.png"
+            },
+            "attr": {
+                "name": "图标点"
+            },
+            "type": "billboard"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [116.388697, 39.993292, 44.25]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "edittype": "rectangle",
+            "name": "矩形",
+            "config": {
+                "height": false,
+                "minPointNum": 2,
+                "maxPointNum": 2
+            },
+            "style": {
+                "height": 44.02
+            },
+            "attr": {
+                "name": "矩形"
+            },
+            "type": "rectangle"
+        },
+        "geometry": {
+            "type": "MultiPoint",
+            "coordinates": [
+                [116.384719, 39.994079, 44.02],
+                [116.385799, 39.992665, 41.19]
+            ]
+        }
+    },  {
+        "type": "Feature",
+        "properties": {
+            "edittype": "rectangleImg",
+            "name": "图片",
+            "config": {
+                "height": false,
+                "minPointNum": 2,
+                "maxPointNum": 2
+            },
+            "style": {
+                "image": "../static/marsData/image/gugong.jpg"
+            },
+            "attr": {
+                "name": "贴地图片"
+            },
+            "type": "rectangle"
+        },
+        "geometry": {
+            "type": "MultiPoint",
+            "coordinates": [
+                [116.384812, 39.989617, 43.14],
+                [116.38631, 39.988172, 43.55]
+            ]
+        }
+    },
+    {
+		"type": "Feature",
+		"properties": {
+			"edittype": "point",
+			"name": "点标记",
+			"style": {
+				"pixelSize": 50
+			},
+			"attr": {},
+			"type": "point"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [116.375344, 39.988917, 51.35]
+		}
+	}]
+}

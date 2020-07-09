@@ -1,0 +1,113 @@
+﻿{
+    "map3d": {
+        "homeButton": true,
+        "navigationHelpButton": false,
+        "sceneModePicker": false,
+        "infoBox": false,
+        "vrButton": false,
+        "fullscreenButton": false,
+        "geocoder": false,
+        "navigation": false,
+        "center": { "y": 40.202743, "x": 116.665469, "z": 12741.19, "heading": 4.3, "pitch": -50.6, "roll": 0 },
+
+        "minzoom": 20,
+        "maxzoom": 50000000,
+        "style": {
+            "atmosphere": true,
+            "lighting": false,
+            "fog": false,
+            "testTerrain": false
+        },
+        "terrain": {
+            "url": "http://223.0.8.11:8801/iserver/services/3D-hbyh0704/rest/realspace/datas/hrdemnew@hrdemnew",
+            "isSct": true,
+            "visible": true
+        },
+        "basemaps": [{
+                "name": "谷歌卫星",
+                "type": "www_google",
+                "crs": "wgs84",
+                "layer": "img_d",
+                "visible": true
+            },
+            {
+                "name": "单张图片",
+                "type": "image",
+                "url": "static/data/map/world.jpg",
+                "visible": false
+            },
+            {
+                "name": "底图-1",
+                "type": "sm-img",
+                "url": "http://223.0.8.11:8801/iserver/services/3D-hbyh0704/rest/realspace/datas/huairouDOM@huairouDOM",
+                "visible": true
+            },
+            {
+                "name": "底图-2",
+                "type": "sm-img",
+                "url": "http://223.0.8.11:8801/iserver/services/3D-hbyh0704/rest/realspace/datas/huairou45deom@huairou45deom",
+                "visible": true
+            }
+        ],
+        "operationallayers": [{
+                "name": "边界线",
+                "type": "geojson",
+                "url": "static/data/geojson/line.json",
+                "clampToGround": true,
+                "symbol": {
+                    "styleOptions": {
+                        "clampToGround": true,
+                        "color": "#00ff00",
+                        "width": 20
+                    }
+                },
+                "visible": true
+            },
+
+            {
+                "name": "倾斜摄影-杨雁路北部",
+                "type": "supermap_s3m",
+                "url": "http://223.0.8.11:8801/iserver/services/3D-hbyh0704/rest/realspace/datas/yq45/config",
+                "layername": "yq45",
+                "s3mOptions": {
+                    "visibleDistanceMin": 0,
+                    "visibleDistanceMax": 1200
+                },
+                "visible": true
+            },
+            {
+                "name": "倾斜摄影-2",
+                "type": "supermap_s3m",
+                "url": "http://223.0.8.11:8801/iserver/services/3D-hbyh0704/rest/realspace/datas/block1234/config",
+                "layername": "block1234",
+                "s3mOptions": {
+                    "visibleDistanceMin": 0,
+                    "visibleDistanceMax": 1200
+                },
+                "visible": true
+            },
+            {
+                "name": "倾斜摄影-3",
+                "type": "supermap_s3m",
+                "url": "http://223.0.8.11:8801/iserver/services/3D-hbyh0704/rest/realspace/datas/block1block10/config",
+                "layername": "block1block10",
+                "s3mOptions": {
+                    "visibleDistanceMin": 0,
+                    "visibleDistanceMax": 1200
+                },
+                "visible": true
+            },
+            {
+                "name": "倾斜摄影-杨雁路南部",
+                "type": "supermap_s3m",
+                "url": "http://223.0.8.11:8801/iserver/services/3D-hbyh0704/rest/realspace/datas/Block9101112/config",
+                "layername": "Block9101112",
+                "s3mOptions": {
+                    "visibleDistanceMin": 0,
+                    "visibleDistanceMax": 1200
+                },
+                "visible": true
+            }
+        ]
+    }
+}
